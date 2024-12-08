@@ -1,0 +1,118 @@
+ [
+  {
+        "roomId": 1,
+        "roomDescription": "Luxurious suite with ocean views and a private balcony.",
+        "pricePerNight": 250,
+        "roomSize": "600 sq ft",
+        "availability": {
+          "totalSeats": 3,
+          "bookedSeats": []
+        },
+        "roomImages": [
+          "luxury_suite_1.jpg",
+          "luxury_suite_2.jpg"
+        ],
+        "specialOffers": "Stay 3 nights, get 1 night free",
+        "reviews": [
+          {
+            "userName": "Alice Johnson",
+            "rating": 5,
+            "comment": "Absolutely stunning room! Highly recommended."
+          },
+          {
+            "userName": "David Lee",
+            "rating": 4,
+            "comment": "Beautiful view, but the room service was slow."
+          }
+        ]
+      },
+      {
+        "roomId": 2,
+        "roomDescription": "Modern deluxe room with city skyline views.",
+        "pricePerNight": 150,
+        "roomSize": "450 sq ft",
+        "availability": {
+          "totalSeats": 4,
+          "bookedSeats": []
+        },
+        "roomImages": [
+          "deluxe_room_1.jpg",
+          "deluxe_room_2.jpg"
+        ],
+        "specialOffers": "Free breakfast for two on weekends",
+        "reviews": [
+          {
+            "userName": "Sarah Connor",
+            "rating": 4,
+            "comment": "Very clean and comfortable."
+          }
+        ]
+      },
+      {
+        "roomId": 3,
+        "roomDescription": "Standard room with all basic amenities for a budget-friendly stay.",
+        "pricePerNight": 90,
+        "roomSize": "350 sq ft",
+        "availability": {
+          "totalSeats": 6,
+          "bookedSeats": []
+        },
+        "roomImages": [
+          "standard_room_1.jpg",
+          "standard_room_2.jpg"
+        ],
+        "specialOffers": null,
+        "reviews": []
+      },
+      {
+        "roomId": 4,
+        "roomDescription": "Family room with two queen beds and a separate living area.",
+        "pricePerNight": 200,
+        "roomSize": "500 sq ft",
+        "availability": {
+          "totalSeats": 2,
+          "bookedSeats": []
+        },
+        "roomImages": [
+          "family_room_1.jpg",
+          "family_room_2.jpg"
+        ],
+        "specialOffers": "Kids stay free under age 10",
+        "reviews": [
+          {
+            "userName": "Karen Smith",
+            "rating": 5,
+            "comment": "Perfect for families! Spacious and well-equipped."
+          }
+        ]
+      },
+      {
+        "roomId": 5,
+        "roomDescription": "Premium room with elegant interiors and a jacuzzi.",
+        "pricePerNight": 180,
+        "roomSize": "480 sq ft",
+        "availability": {
+          "totalSeats": 3,
+          "bookedSeats": []
+        },
+        "roomImages": [
+          "premium_room_1.jpg",
+          "premium_room_2.jpg"
+        ],
+        "specialOffers": "Complimentary spa voucher for stays longer than 2 nights",
+        "reviews": [
+          {
+            "userName": "Tom Harris",
+            "rating": 5,
+            "comment": "Loved the jacuzzi! Amazing experience."
+          },
+          {
+            "userName": "Linda Davis",
+            "rating": 4,
+            "comment": "Beautiful room, but could use more lighting."
+          }
+        ]
+      }
+]
+
+  

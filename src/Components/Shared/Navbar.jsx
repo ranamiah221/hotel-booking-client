@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const [index, setIndex]=useState(true);
+  const [lightTheme, setLightTheme]= useState('light')
+  const [darkTheme, setDarkTheme]= useState('dark')
+
+  if(!index){
+    document.querySelector('html').setAttribute('data-theme', darkTheme)
+  }
+  else{
+    document.querySelector('html').setAttribute('data-theme', lightTheme)
+  }
   return (
     <div className="navbar bg-base-200 shadow-lg">
       <div className="navbar-start">
@@ -24,13 +34,13 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="text-base font-medium menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  isActive ? "text-green-500" : "text-black"
+                  isActive ? "text-green-500" : ""
                 }
               >
                 Home
@@ -40,7 +50,7 @@ const Navbar = () => {
               <NavLink
                 to="/rooms"
                 className={({ isActive }) =>
-                  isActive ? "text-green-500" : "text-black"
+                  isActive ? "text-green-500" : ""
                 }
               >
                 Rooms
@@ -52,12 +62,12 @@ const Navbar = () => {
         <a className="btn btn-ghost text-xl">Furaton</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-2">
+        <ul className="menu text-base font-medium menu-horizontal px-2">
         <li>
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  isActive ? "text-green-500" : "text-black"
+                  isActive ? "text-green-500" : ""
                 }
               >
                 Home
@@ -67,17 +77,27 @@ const Navbar = () => {
               <NavLink
                 to="/rooms"
                 className={({ isActive }) =>
-                  isActive ? "text-green-500" : "text-black"
+                  isActive ? "text-green-500" : ""
                 }
               >
                 Rooms
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/add-rooms"
+                className={({ isActive }) =>
+                  isActive ? "text-green-500" : ""
+                }
+              >
+                Add Rooms
               </NavLink>
             
             </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+      <input onChange={()=>setIndex(!index)} type="checkbox" className="toggle" defaultChecked />
       </div>
     </div>
   );
